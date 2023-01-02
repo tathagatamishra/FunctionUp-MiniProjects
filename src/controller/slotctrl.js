@@ -1,6 +1,22 @@
 const UserModel = require('../model/usermodel')
 const SlotModel = require('../model/slotmodel')
 
+
+exports.findSlot = async (req, res) => {
+    try {
+        let userId = req.body
+        
+        let user = await UserModel.findById(userId)
+
+        if (!user) return res.status(404).send({status: false, message: 'User id not found'})
+
+        
+    }
+    catch (error) {
+        res.status(500).send({status: false, message: error.message})
+    }
+}
+
 exports.bookSlot = async (req, res) => {
     try {
         let data = req.body
