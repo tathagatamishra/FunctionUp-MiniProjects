@@ -14,6 +14,8 @@ exports.bookSlot = async (req, res) => {
 
         let checkSlot = await SlotModel.findOne({date: date, time: time})
 
+        if (!checkSlot) return res.status(400).send({status: false, message: 'Enter a valid time'})
+
         if (checkSlot.userId.length > 10) {
             return res.status(400).send({status: false, message: 'This time slot is already booked, try to book another slot'})
         }
