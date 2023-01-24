@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    text-align: center;
+    caret-color: transparent;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(32, 28, 43);
+    background-image: radial-gradient(rgb(87, 87, 87) 10%, transparent 11%);
+    background-size: 6px 6px;
+    background-repeat: repeat;
+
+}
+
+h1 {
+    color: rgb(255, 230, 0);
+}
+
+p {
+    text-align: left;
+}
+
+h3 {
+    color: rgb(255, 255, 255);
+    height: 1px;
+}
+
+.container {
+    padding: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.draggable {
+    padding: 1rem;
+    width: 30rem;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(206, 160, 255);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(30, 0, 137);
+    cursor: move;
+}
+
+.draggable.dragging {
+    opacity: .5;
+}
