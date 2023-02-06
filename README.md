@@ -1,16 +1,14 @@
-# Problem Statement:
-Create two API’s which can perform the specified CRUD operations.The project structure should
-have models, middlewares, controllers and services. Write MongoDB queries to fetch, update,
-add or delete data from the specified collections. You can assume that the collections already
-exist in the database and just define the project structure.
+## BonusProjectDocument
 
+### Problem Statement:
 
-### Customer API
-1. Get all customers List with status ACTIVE [GET]
-2. Delete customer. [DELETE]
-3. Create new customer [POST]
+### Create a shopping list web application using nodejs and mongodb.
 
-
-### Card API
-1. Get all Card List[GET]
-2. Create new card [POST]
+1. Place a dropdown with various fruits and vegetables options.
+2. Upon selecting fruit from the dropdown, it should display its unit rate.
+3. Upon selecting the weight of that particular fruit, the final rate should be displayed.
+4. There is only one fruit selection rule that if Apples are chosen then Bananas can’t be chosen and vice versa. Other fruits can be selected no matter whether Apples or Bananas are selected.
+5. Total price should be updated in real time when a user changes currency from rupees to dollars based on any free currency api.
+6. Update the final price of the product on the shopping list.
+7. Shopping list should be saved and has to be retained upon refresh.
+8. Give basic ui to the list as per your choice.
