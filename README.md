@@ -17,6 +17,16 @@
 
 The anonymous chat room project is a real-time chat application that provides users to chat with each other. It uses React and Node.js to provide a fast and efficient chat experience and Socket.IO for real-time communication between users. MongoDB is used to store chat messages and user data. And user can delete their data if they want.
 
+### HOW TO USE :
+
+```
+cd server
+npm install
+npm start
+```
+
+Open the `app/index.html` file in a browser. 
+
 ### TECHNOLOGY :
 
 <img align='right' src="https://user-images.githubusercontent.com/114053180/222348354-b0a6cbb5-f5d3-4337-8cda-0a5bbd66eced.png" width="100">
