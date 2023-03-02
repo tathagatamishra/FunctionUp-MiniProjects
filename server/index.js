@@ -1,21 +1,8 @@
-const express = require('express')
-const multer = require('multer')
-const mongoose = require('mongoose')
+const WebSocket = require('ws')
+const server = new WebSocket.Server({port:'6969'})
 
-const route = require('./route/route')
-
-const app = express()
-
-app.use(express.json())
-app.use(multer().any())
-
-
-mongoose.set('strictQuery', false)
-mongoose.connect('mongodb+srv://new_user:jk1BBWwmxQpZ31zO@cluster0.pxvwsjp.mongodb.net/MiniProject3')
-.then(() => console.log('MDB is connected'))
-.catch(err => console.log(err))
-
-
-app.use('/', route)
-
-app.listen(3000, console.log('Server is running'))
+server.on('connection', socket=>{
+    socket.on('message', message=>{
+        socket.send(message)
+    })
+})
