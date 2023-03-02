@@ -1,3 +1,5 @@
+<h1 align="center">ANONCHAN</h1>
+
 ## REAL-TIME CHAT APPLICATION 
 
 <img align='right' src="https://media.giphy.com/media/TdEbWYu236gDO9LRAx/giphy.gif" width="200">
