@@ -1,0 +1,43 @@
+.calculator {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+    border-radius: 10px;
+    /* border: solid rgb(255, 255, 47); */
+}
+
+.display {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    /* border: solid greenyellow; */
+}
+
+.display div {
+    text-align: left;
+    max-width: 1280px;
+    margin: 0 auto;
+    /* border: solid rgb(47, 123, 255); */
+}
+
+.btns {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0rem;
+    text-align: center;
+    /* border: solid rgb(34, 255, 0); */
+}
+
+.btns{
+    height: 200px;
+}
+
+.btns button {
+    width: 25%;
+    height: 20%;
+    border-radius: 50px;
+}
