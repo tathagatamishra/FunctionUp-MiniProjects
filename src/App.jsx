@@ -1,19 +1,35 @@
-import { useState } from "react";
-import "./App.css";
-import Calculator from "./component/calculator";
+import { useState } from 'react'
+import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(0)
 
   return (
     <div className="App">
       <div>
-        <img src="/calculator.png" className="logo" />
+        <input type="number" />
+        <input type="number" />
+        <button>Generate</button>
       </div>
-      <h1 className="heading">React Calculator</h1>
-      <Calculator />
+      <table>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
