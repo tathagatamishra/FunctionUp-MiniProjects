@@ -1,35 +1,20 @@
-import { useState } from 'react'
-import './App.css'
+import React from 'react';
+import { UserProvider } from "./UserContext";
+import UserList from "./UserList";
+import UserForm from "./UserForm";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
-    <div className="App">
-      <div>
-        <input type="number" />
-        <input type="number" />
-        <button>Generate</button>
+    <UserProvider>
+      <div className="App">
+        <UserList />
+        <UserForm />
       </div>
-      <table>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-      </table>
-    </div>
-  )
+    </UserProvider>
+  );
 }
 
-export default App
+export default App;
